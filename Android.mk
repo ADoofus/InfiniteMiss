@@ -31,23 +31,23 @@ include $(PREBUILT_SHARED_LIBRARY)
 
 # Build the beatsaber-hook shared library, SPECIFICALLY VERSIONED!
 include $(CLEAR_VARS)
-LOCAL_MODULE	        := beatsaber-hook_TESTHOOK
-LOCAL_SRC_FILES         := ./extern/beatsaber-hook/include/libs/libbeatsaber-hook_TESTHOOK.so
+LOCAL_MODULE	        := beatsaber-hook_2019_2_1f1_0_1_2
+LOCAL_SRC_FILES         := ./extern/beatsaber-hook/include/libs/arm64-v8a/libbeatsaber-hook_2019_2_1f1_0_1_2.so
 LOCAL_EXPORT_C_INCLUDES := ./extern/beatsaber-hook/shared/
 include $(PREBUILT_SHARED_LIBRARY)
 
-# Build the CustomUI shared library
-include $(CLEAR_VARS)
-LOCAL_MODULE	        := CustomUI_2019_2_1f1_0_1_3
-LOCAL_SRC_FILES         := ./extern/BeatSaberQuestCustomUI/libs/arm64-v8a/libcustomui_2019_2_1f1_0_1_3.so
-LOCAL_EXPORT_C_INCLUDES := ./extern/BeatSaberQuestCustomUI/shared
-include $(PREBUILT_SHARED_LIBRARY)
+# # Build the CustomUI shared library
+# include $(CLEAR_VARS)
+# LOCAL_MODULE	        := CustomUI_2019_2_1f1_0_1_3
+# LOCAL_SRC_FILES         := ./extern/BeatSaberQuestCustomUI/libs/arm64-v8a/libcustomui_2019_2_1f1_0_1_3.so
+# LOCAL_EXPORT_C_INCLUDES := ./extern/BeatSaberQuestCustomUI/shared
+# include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 # Include the two libraries
 LOCAL_SHARED_LIBRARIES := modloader
-LOCAL_SHARED_LIBRARIES += beatsaber-hook_TESTHOOK
-LOCAL_SHARED_LIBRARIES += CustomUI_2019_2_1f1_0_1_3
+LOCAL_SHARED_LIBRARIES += beatsaber-hook_2019_2_1f1_0_1_2
+# LOCAL_SHARED_LIBRARIES += CustomUI_2019_2_1f1_0_1_3
 LOCAL_LDLIBS     := -llog
 LOCAL_CFLAGS     := -D'MOD_ID="originalsTestModV1"' -D'VERSION="0.1.0"' -I'C:/Program Files/Unity/Editor/Data/il2cpp/libil2cpp'
 LOCAL_MODULE     := originalstestmodv1
