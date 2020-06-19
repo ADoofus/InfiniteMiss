@@ -46,7 +46,7 @@ include $(PREBUILT_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 # Include the two libraries
 LOCAL_SHARED_LIBRARIES := modloader
-LOCAL_SHARED_LIBRARIES += beatsaber-hook_2019_2_1f1_0_1_2
+LOCAL_SHARED_LIBRARIES += beatsaber-hook
 # LOCAL_SHARED_LIBRARIES += CustomUI_2019_2_1f1_0_1_3
 LOCAL_LDLIBS     := -llog
 LOCAL_CFLAGS     := -D'MOD_ID="originalsTestModV1"' -D'VERSION="0.1.0"' -I'C:/Program Files/Unity/Editor/Data/il2cpp/libil2cpp'
