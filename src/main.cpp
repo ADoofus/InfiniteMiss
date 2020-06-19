@@ -7,18 +7,18 @@
 
 using namespace il2cpp_utils;
 
-MAKE_HOOK_OFFSETLESS(MissedNoteEffect_Update, void, Il2CppObject*self) {
+MAKE_HOOK_OFFSETLESS(MissedNoteEffect_Init, void, Il2CppObject*self) {
     
     SetFieldValue(self, "_animationDuration", 999999.0f);
 
-    MissedNoteEffect_Update(self);
+    MissedNoteEffect_Init(self);
 }
 
 extern "C" void load() {
     //log(INFO, "Hello from il2cpp_init!");
     //log(INFO, "Installing hooks...");
 
-    INSTALL_HOOK_OFFSETLESS(MissedNoteEffect_Update, FindMethod("", "MissedNoteEffect", "Update"));
+    INSTALL_HOOK_OFFSETLESS(MissedNoteEffect_Init, FindMethod("", "MissedNoteEffect", "Init"));
 
     //log(INFO, "Installed all hooks!");
 }
