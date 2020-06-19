@@ -1,0 +1,23 @@
+{
+    "id": "originalsTestModV1",
+    "name": "originalsTestMod",
+    "author": "originalusername#7476",
+    "description": [
+        
+    ],
+    "category": "Gameplay",
+    "gameVersion": "1.10.0",
+    "version": "0.1.0",
+    "platform": "Quest",
+    "components": [
+        {
+            "type": "HookMod",
+            "installAction": {
+                "installLibraryFile": "liboriginalstestmodv1.so"
+            },
+            "uninstallAction": {
+                "removeLibraryFile": "liboriginalstestmodv1.so"
+            }
+        }
+    ]
+}
