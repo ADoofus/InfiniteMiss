@@ -9,7 +9,8 @@
 using namespace il2cpp_utils;
 
 MAKE_HOOK_OFFSETLESS(MissedNoteEffect_Update, void, Il2CppObject*self) {
-    SetFieldValue(self, "_animationDuration", 99999999999999.0f);
+    
+    SetFieldValue(self, "_animationDuration", 999999.0f);
 
     MissedNoteEffect_Update(self);
 }
