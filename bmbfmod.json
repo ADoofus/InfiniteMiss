@@ -1,6 +1,6 @@
 {
-    "id": "originalsTestModV1",
-    "name": "originalsTestMod",
+    "id": "InfiniteMiss",
+    "name": "Infinite Miss",
     "author": "originalusername#7476",
     "description": [
         
@@ -13,11 +13,16 @@
         {
             "type": "HookMod",
             "installAction": {
-                "installLibraryFile": "liboriginalstestmodv1.so"
+                "installLibraryFile": "libinfinitemiss.so"
             },
             "uninstallAction": {
-                "removeLibraryFile": "liboriginalstestmodv1.so"
+                "removeLibraryFile": "libinfinitemiss.so"
             }
+        },
+        {
+            "type": "FileCopyMod",
+            "sourceFileName": "libbeatsaber-hook_2019_2_1f1_0_1_2.so",
+            "targetRootedPathAndFileName": "/sdcard/Android/data/com.beatgames.beatsaber/files/libs/libbeatsaber-hook_2019_2_1f1_0_1_2.so"
         }
     ]
 }

@@ -1,8 +1,7 @@
 //original's first mod 
-#include <dlfcn.h>
-
-#include "../extern/beatsaber-hook/include/modloader.hpp"
+#include "../extern/beatsaber-hook/shared/utils/il2cpp-functions.hpp"
 #include "../extern/beatsaber-hook/shared/utils/utils.h"
+#include "../extern/beatsaber-hook/include/modloader.hpp"
 #include "../extern/beatsaber-hook/shared/utils/typedefs.h"
 #include "../extern/beatsaber-hook/shared/utils/il2cpp-utils.hpp"
 
