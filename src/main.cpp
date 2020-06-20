@@ -5,6 +5,7 @@
 #include "../extern/beatsaber-hook/shared/utils/typedefs.h"
 #include "../extern/beatsaber-hook/shared/utils/il2cpp-utils.hpp"
 
+
 using namespace il2cpp_utils;
 
 MAKE_HOOK_OFFSETLESS(MissedNoteEffect_Init, void, Il2CppObject* self, Il2CppObject* noteData, float animationDuration, float startAnimationTime) {
@@ -14,6 +15,7 @@ MAKE_HOOK_OFFSETLESS(MissedNoteEffect_Init, void, Il2CppObject* self, Il2CppObje
 
 }
 
+
 extern "C" void load() {
     //log(INFO, "Hello from il2cpp_init!");
     //log(INFO, "Installing hooks...");
@@ -22,9 +24,3 @@ extern "C" void load() {
 
     //log(INFO, "Installed all hooks!");
 }
-
-enum class Space {
-    World,
-    Self
-};
-DEFINE_IL2CPP_ARG_TYPE(Space, "UnityEngine", "Space");

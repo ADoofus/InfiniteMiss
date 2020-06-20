@@ -1,5 +1,5 @@
-cd .\extern\beatsaber-hook
+Set-Location .\extern\beatsaber-hook
 git fetch origin
-git reset --hard origin/so-update
-cd ..\
-cd ..\
+git reset --hard origin -- so-update
+Set-Location ..\
+Set-Location ..\
